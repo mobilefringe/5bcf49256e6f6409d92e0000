@@ -56,7 +56,7 @@
     },
     {
         "name": "header.contact_us",
-        "href": "/contact_us",
+        "href": "#",
         "sub_menu": [
             {
                 "name": "header.contact_us",
