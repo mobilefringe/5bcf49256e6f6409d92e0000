@@ -143,6 +143,11 @@
                         current_promo.description_short = _.truncate(current_promo.description, {
                             'length': 70
                         });
+                        if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                        this.currentStore.no_logo = true
+                    } else {
+                        this.currentStore.no_logo = false
+                    }
                         temp_promo.push(current_promo);
                     });
                     this.promotions = temp_promo;
