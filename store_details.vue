@@ -62,7 +62,7 @@
 						<div class="row store_promo_dets text-left" v-for="promo in promotions"  :key="promo.id">
 							<div class="col-sm-6 no_padding" >
 								<div class="promo_div_image"  v-lazy:background-image="promo.image_url">
-									<img v-lazy="" class="image" alt=""/>
+									<!--<img v-lazy="" class="image" alt=""/>-->
 								</div>
 								<div class="store_promo_dets_container padding_tb_20">
 								    <p class="promo_div_name" v-if="locale=='en-ca'">{{promo.name}}</p>
@@ -122,7 +122,11 @@
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
-                    this.pageBanner = this.pageBanner;
+                    else {
+                        this.pageBanner = {};
+                        this.pageBanner.image_url = "";
+                    }
+                    
                 });
             },
             watch: {
