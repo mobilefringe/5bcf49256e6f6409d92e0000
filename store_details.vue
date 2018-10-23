@@ -15,15 +15,15 @@
 					<!--	<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
 					<!--</div>-->
 					<div v-if="currentStore.no_logo" class="store_details_no_logo center-block">
-                                    <div class="no_logo">
-                                        <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png">
-                                        <p class="store_details_name">{{ currentStore.name }}</p>
-                                    </div>    
-                                </div>
-                                <div id="store_dets_logo_container" v-else>
-                                    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png">
-                    			    <img  class="store_details_image" :src="currentStore.store_front_url_abs" alt="">
-                                </div>
+                        <div class="no_logo">
+                            <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png">
+                            <p class="store_details_name">{{ currentStore.name }}</p>
+                        </div>    
+                    </div>
+                    <div id="store_dets_logo_container" v-else>
+                        <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png">
+        			    <img  class="store_details_image" :src="currentStore.store_front_url_abs" alt="">
+                    </div>
 				</div>
 				<div class="col-sm-8 promo_image_container text-left">
 					<div class="col-sm-12 no_padding">
