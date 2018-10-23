@@ -4,7 +4,8 @@
     "closed": "Closed Today",
     "sign_up": "Sign Up",
     "stores" : "Stores",
-    "centre_map" : "Centre Map",
+    "centre_map" : "Centre Map",,
+    "now_opening": "Now Open/ Opening Soon"
     "promos" : "Promotions",
     "events" : "Events",
     "guest_services" : "Guest Services",
@@ -16,8 +17,7 @@
     "hours": "Hours",
     "jobs" : "Employment",
     "find_us" : "Find Us",
-    "newsletter" : "Newsletter",
-    "now_opening": "Now Open/ Opening Soon"
+    "newsletter" : "Newsletter"
   },
   "footer": {
     "stay_uptodate" : "Stay up to date on all of our Happenings",
