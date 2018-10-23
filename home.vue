@@ -148,7 +148,7 @@
                         }
                         else {
                             value.masonry_class = " ";
-                            value.image_url = "https://picsum.photos/570/570?image=89"+key;
+                            value.image_url = "https://picsum.photos/570/570?image=20"+key;
                         }
                         if(value.name === null || value.name === undefined || value.name.length == 0) {
                             value.no_hover_class = false;
