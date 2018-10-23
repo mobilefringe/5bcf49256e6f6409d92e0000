@@ -8,7 +8,7 @@
 						<!--<div class="home-banner" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>-->
 						<div class="home-banner" v-lazy:background-image="banner.image_url">
 						    <div class="hero-text">
-						        
+						        <h1>{{banner.name}}</h1>
 						    </div>
 						</div>
 					</div>
