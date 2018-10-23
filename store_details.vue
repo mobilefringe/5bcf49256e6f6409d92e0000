@@ -146,6 +146,8 @@
                         });
                         temp_promo.push(current_promo);
                     });
+                    this.promotions = temp_promo;
+                    
                     _.forEach(this.currentStore.jobs, function(value, key) {
                         var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {
@@ -154,7 +156,7 @@
                         temp_job.push(current_job);
 
                     })
-                    this.promotions = temp_promo;
+                    
                     this.jobs = temp_job;
                     
                     var storeHours = [];
