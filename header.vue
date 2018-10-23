@@ -76,7 +76,7 @@
     				<div class="site_logo">
     					<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
     				</div>
-    				<div class="row top_nav hidden_phone">
+    				<div class="row top_nav hidden_phone pull-right">
     					<nav id="primary_nav">
     						<ul>
     						    <li v-for="item in menu_items" class="menu_item">
