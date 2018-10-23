@@ -90,10 +90,8 @@
                     
                     console.log(response);
                     var socialFeed = response[4].data;
-                    console.log("socialFeed", socialFeed);
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [5]);
-                    console.log("locale created", this.locale);
                 });
             },
             watch : {
