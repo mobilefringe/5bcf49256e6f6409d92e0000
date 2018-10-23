@@ -9,6 +9,9 @@
 						<div class="home-banner" v-lazy:background-image="banner.image_url">
 						    <div class="hero-text">
 						        <h1>{{banner.name}}</h1>
+						        <p>
+						            {{banner.description}}
+						        </p>
 						    </div>
 						</div>
 					</div>
