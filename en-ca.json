@@ -20,7 +20,8 @@
     "newsletter" : "Newsletter"
   },
   "footer": {
-    "stay_uptodate" : "Stay up to date on all of our Happenings",
+    "stay_uptodate" : "Stay up to date on ",
+    "all_our_happening": "all of our Happenings",
     "enter_email" : "Enter Your Email",
     "subscribe_thankyou" : "Thank you for subscribing to our newsletter.",
     "all_rights" : "All Rights Reserved.",
