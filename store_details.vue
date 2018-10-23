@@ -61,8 +61,8 @@
 						<h4 v-if="currentStore.rich_description" class="store_dets_title caps margin_30">{{$t("promos_page.promotions")}}</h4>
 						<div class="row store_promo_dets text-left" v-for="promo in promotions"  :key="promo.id">
 							<div class="col-sm-6 no_padding" >
-								<div class="promo_div_image">
-									<img v-lazy="promo.image_url" class="image" alt=""/>
+								<div class="promo_div_image"  v-lazy:background-image="promo.image_url">
+									<img v-lazy="" class="image" alt=""/>
 								</div>
 								<div class="store_promo_dets_container padding_tb_20">
 								    <p class="promo_div_name" v-if="locale=='en-ca'">{{promo.name}}</p>
