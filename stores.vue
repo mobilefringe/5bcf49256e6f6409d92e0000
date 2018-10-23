@@ -172,7 +172,7 @@
                     var stores = this.processedStores;
                    stores.map(store => {
                        if (_.includes(store.store_front_url_abs, 'missing')) {
-                            store.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                            store.store_front_url_abs = Site.default_logo;
                         }
                     });
                     return this.processedStores;
