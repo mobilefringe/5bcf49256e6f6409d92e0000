@@ -27,7 +27,7 @@
                     <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
                     	<!--class="ih-item circle effect19"-->
-                    		<router-link :to="feature.url">
+                    		<router-link v-if="feature.url" :to="feature.url">
                     			<img :src="feature.image_url" alt="name">
                     			<div class="info">
                     				<div class="content">
