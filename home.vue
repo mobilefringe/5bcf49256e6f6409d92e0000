@@ -131,6 +131,7 @@
                         
                         if( _.includes([1], key) ) {
                             value.masonry_class = "grid-item--height2";
+                            value.image_url = "https://picsum.photos/570/1140?image=98"+key;
                         }
                         else if ( _.includes([5], key) ){
                             value.masonry_class = "grid-item--width2";
