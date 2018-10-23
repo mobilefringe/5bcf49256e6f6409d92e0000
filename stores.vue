@@ -100,7 +100,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "vue-lazy-load", 'json!site.json'], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent,VueLazyload, Site) {
+    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "vue-lazy-load", 'json!site.json',"masonry" , "vue-masonry-plugin"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent,VueLazyload, Site) {
         Vue.use(VueLazyload);
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
