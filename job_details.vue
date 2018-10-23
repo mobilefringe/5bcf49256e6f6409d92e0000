@@ -90,7 +90,10 @@
                     if(temp_repo) {
                         this.jobBanner = temp_repo.images[0];
                     }
-                    console.log(this.jobBanner);
+                    else {
+                        this.pageBanner = {};
+                        this.pageBanner.image_url = "";
+                    }
                     this.jobs = this.job;
                 });
             },
