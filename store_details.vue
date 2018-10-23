@@ -114,12 +114,11 @@
                     }
                     this.pageBanner = this.pageBanner;
                 });
-                 console.log("locale created", this.locale);
             },
             watch: {
                 currentStore: function() {
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        this.currentStore.store_front_url_abs = Site.default_logo_url
+                        this.currentStore.store_front_url_abs = Site.default_logo_url;
                     }
                     var vm = this;
                     var temp_promo = [];
