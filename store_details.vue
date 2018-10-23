@@ -138,7 +138,6 @@
                     }
                     var vm = this;
                     var temp_promo = [];
-                    var temp_job = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         var current_promo = vm.findPromoById(value);
                         current_promo.description_short = _.truncate(current_promo.description, {
@@ -148,6 +147,7 @@
                     });
                     this.promotions = temp_promo;
                     
+                    var temp_job = [];
                     _.forEach(this.currentStore.jobs, function(value, key) {
                         var current_job = vm.findJobById(value);
                         current_job.description_short = _.truncate(current_job.description, {
