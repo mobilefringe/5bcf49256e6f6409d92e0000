@@ -144,7 +144,7 @@
                             'length': 70
                         });
                         if (_.includes(current_promo.image, 'missing')) {
-                            this.currentStore.no_logo = true
+                            current_promo.no_logo = true
                         } else {
                             this.currentStore.no_logo = false
                         }
