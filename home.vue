@@ -127,16 +127,18 @@
                     // return this.$store.state.feature_items;
                     var features = this.$store.state.feature_items;
                     _.forEach(features, function(value, key) {
-                        value.image_url = "https://picsum.photos/570/570?image=98"+key;
+                        
                         
                         if( _.includes([1], key) ) {
                             value.masonry_class = "grid-item--height2";
                         }
                         else if ( _.includes([5], key) ){
                             value.masonry_class = "grid-item--width2";
+                            value.image_url = "https://picsum.photos/1140/570?image=98"+key;
                         }
                         else {
                             value.masonry_class = " ";
+                            value.image_url = "https://picsum.photos/570/570?image=98"+key;
                         }
                         if(value.name === null || value.name === undefined || value.name.length == 0) {
                             value.no_hover_class = false;
