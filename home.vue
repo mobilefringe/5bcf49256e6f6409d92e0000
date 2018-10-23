@@ -44,7 +44,7 @@
 		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
 		    </div>
 		    <div class="insta-feed-container">
-                <a v-for="(item, index) in instaFeed" :href="item.link" target="_blank" class="no_padding">
+                <a v-for="(item, index) in instaFeed" :href="item.link" target="_blank" class=" insta_itemno_padding">
                 <div class="insta-feed-image "  v-lazy:background-image="item.images.standard_resolution.url">
                     <!--<a :href="item.link" target="_blank"><img :src="item.images.thumbnail.url"/></a>-->
                 </div></a>
