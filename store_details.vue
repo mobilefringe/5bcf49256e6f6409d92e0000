@@ -60,7 +60,7 @@
 						<div class="promo_container_title text-left caps"></div>
 						<h4 v-if="currentStore.rich_description" class="store_dets_title caps margin_30">{{$t("promos_page.promotions")}}</h4>
 						<div class="row store_promo_dets text-left">
-							<div class="col-sm-6 no_padding" v-for="promo in promotions"  :key="promo.id" >
+							<div class="col-sm-6" v-for="promo in promotions"  :key="promo.id" >
 								<div class="promo_div_image"  v-lazy:background-image="promo.image_url">
 									<!--<img v-lazy="" class="image" alt=""/>-->
 								</div>
