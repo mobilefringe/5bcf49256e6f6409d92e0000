@@ -1,7 +1,7 @@
 [
     {
         "name": "header.stores",
-        "href": "/stores",
+        "href": "#",
         "sub_menu": [{
                 "name": "header.stores",
                 "href": "/stores"
@@ -23,8 +23,10 @@
     },
     {
         "name": "header.promos",
-        "href": "/promotions",
+        "href": "#",
         "sub_menu": [{
+            "name": "header.promos",
+        "href": "/promotions"
         }]
     },
     {
