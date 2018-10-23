@@ -127,7 +127,8 @@
                     // return this.$store.state.feature_items;
                     var features = this.$store.state.feature_items;
                     _.forEach(features, function(value, key) {
-                      
+                        value.image_url = "https://picsum.photos/200/300?image=98"+key;
+                        
                         if( _.includes([1], key) ) {
                             value.masonry_class = "grid-item--height2";
                         }
