@@ -14,17 +14,17 @@
                 "name": "header.now_opening",
                 "href": "/stores"
             },
-            {
-                "name": "header.promos",
-                "href": "/promotions"
-            },
+            
             {
                 "name": "header.jobs",
                 "href": "/jobs"
             }
         ]
     },
-    
+    {
+        "name": "header.promos",
+        "href": "/promotions"
+    },
     {
         "name": "header.events",
         "href": "/events"
