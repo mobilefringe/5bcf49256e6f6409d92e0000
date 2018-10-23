@@ -172,7 +172,7 @@
                     var stores = this.processedStores;
                    stores.map(store => {
                        if (_.includes(store.store_front_url_abs, 'missing')) {
-                            store.store_front_url_abs = Site.default_logo;
+                            store.store_front_url_abs = Site.default_logo_url;
                         }
                     });
                     return this.processedStores;
