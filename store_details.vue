@@ -119,7 +119,7 @@
             watch: {
                 currentStore: function() {
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        this.currentStore.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                        this.currentStore.store_front_url_abs = Site.default_logo_url
                     }
                     var vm = this;
                     var temp_promo = [];
