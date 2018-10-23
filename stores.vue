@@ -99,7 +99,7 @@
                     this.filteredStores = this.allStores;
                     
                     // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
-                    var temp_repo = this.findRepoByName('Stores Banner');
+                    var temp_repo = this.findRepoByName('Directory Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
