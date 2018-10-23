@@ -1,0 +1,74 @@
+[
+    {
+        "name": "header.stores",
+        "href": "/stores",
+        "sub_menu": [{
+                "name": "header.stores",
+                "href": "/stores"
+            },
+            {
+                "name": "header.centre_map",
+                "href": "/map"
+            },
+            {
+                "name": "header.now_opening",
+                "href": "/map"
+            }
+        ]
+    },
+    {
+        "name": "header.promos",
+        "href": "/promotions"
+    },
+    {
+        "name": "header.events",
+        "href": "/events"
+    },
+    {
+        "name": "header.guest_services",
+        "href": "/pages/bonniedoon-services",
+        "sub_menu": [{
+                "name": "header.services ",
+                "href": "/pages/bonniedoon-services"
+            },
+            {
+                "name": "header.community",
+                "href": "/pages/bonniedoon-community-support"
+            },
+            {
+                "name": "header.green_initiatives",
+                "href": "/pages/bonniedoon-green-initiatives"
+            },
+            {
+                "name": "header.gift_card",
+                "href": "/pages/bonniedoon-gift-cards"
+            }
+        ]
+    },
+    {
+        "name": "header.contact_us",
+        "href": "/contact_us",
+        "sub_menu": [
+            {
+                "name": "header.contact_us",
+                "href": "/contact_us"
+            },
+            {
+                "name": "header.hours",
+                "href": "/hours"
+            },
+            {
+                "name": "header.jobs",
+                "href": "/jobs"
+            },
+            {
+                "name": "header.find_us",
+                "href": "/find_us"
+            },
+            {
+                "name": "header.newsletter",
+                "href": "/newsletter"
+            }
+        ]
+    }
+]
