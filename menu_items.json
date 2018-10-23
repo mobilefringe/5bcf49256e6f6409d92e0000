@@ -23,7 +23,9 @@
     },
     {
         "name": "header.promos",
-        "href": "/promotions"
+        "href": "/promotions",
+        "sub_menu": [{
+        }]
     },
     {
         "name": "header.events",
