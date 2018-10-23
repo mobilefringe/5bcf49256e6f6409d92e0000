@@ -143,7 +143,7 @@
                         current_promo.description_short = _.truncate(current_promo.description, {
                             'length': 70
                         });
-                        if (_.includes(current_promo.image, 'missing')) {
+                        if (_.includes(current_promo.image_url, 'missing')) {
                             current_promo.no_logo = true
                         } else {
                             this.currentStore.no_logo = false
