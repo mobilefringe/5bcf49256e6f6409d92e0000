@@ -7,6 +7,7 @@
     "centre_map" : "Centre Map",
     "now_opening": "Now Open/ Opening Soon",
     "promos" : "Promotions",
+    "jobs" : "Employment",
     "events" : "Events",
     "guest_services" : "Guest Services",
     "services" : "Services",
@@ -15,7 +16,6 @@
     "gift_card" : "Gift Card",
     "contact_us" : "Contact Us",
     "hours": "Hours",
-    "jobs" : "Employment",
     "find_us" : "Find Us",
     "newsletter" : "Newsletter"
   },
