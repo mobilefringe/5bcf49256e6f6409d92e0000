@@ -100,7 +100,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-select", "jquery", "vue!search-component", "vue-lazy-load", 'json!site.json',"masonry","vue-masonry-plugin"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent,VueLazyload, Site, masonry, VueMasonryPlugin) {
+    define(["Vue", "vuex", "vue-select", "jquery", "vue!search-component", "vue-lazy-load", 'json!site.json',"masonry","vue-masonry-plugin"], function(Vue, Vuex, VueSelect, $, SearchComponent,VueLazyload, Site, masonry, VueMasonryPlugin) {
         Vue.use(VueLazyload);
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("stores-component", {
