@@ -144,26 +144,26 @@
                             'length': 70
                         });
                         if (_.includes(current_promo.image_url, "missing")) {
-                if (
-                  current_promo.store === null ||
-                  current_promo.store === undefined
-                ) {
-                  current_promo.image_url =
-                    "https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404";
-                } else if (
-                  current_promo.store != null &&
-                  current_promo.store != undefined &&
-                  _.includes(current_promo.store.store_front_url_abs, "missing")
-                ) {
-                  current_promo.image_url =
-                    "https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404";
-                } else {
-                  current_promo.image_url =
-                    current_promo.store.store_front_url_abs;
-                }
-              } else {
-                current_promo.image_url = current_promo.promo_image_url_abs;
-              }
+                            if (
+                              current_promo.store === null ||
+                              current_promo.store === undefined
+                            ) {
+                              current_promo.image_url =
+                                "https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404";
+                            } else if (
+                              current_promo.store != null &&
+                              current_promo.store != undefined &&
+                              _.includes(current_promo.store.store_front_url_abs, "missing")
+                            ) {
+                              current_promo.image_url =
+                                "https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404";
+                            } else {
+                              current_promo.image_url =
+                                current_promo.store.store_front_url_abs;
+                            }
+                          } else {
+                            current_promo.image_url = current_promo.promo_image_url_abs;
+                          }
                         temp_promo.push(current_promo);
                     });
                     this.promotions = temp_promo;
