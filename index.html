@@ -40,24 +40,26 @@
                     </div>
     				<div class="footer">
     					<div class="site_container">
-    						<div class="site_logo">
-    							<router-link to="/"><img src="//codecloud.cdn.speedyrails.net/sites/5bcf49256e6f6409d92e0000/image/png/1540325700488/TC LOGO BLK INVERTED.png" alt="Property Logo"/></router-link>
-    						</div>
-    						<div class="footer_property">
-								<a href="https://www.morguard.com/" target="_blank">
-								<img src="//codecloud.cdn.speedyrails.net/sites/5afb8d456e6f6436aa100000/image/png/1524517405981/Morguard_White_3.5inch.png" class="" alt="Managed by Morguard">
-								</a>
-							</div>
-							<div class="safe_emplyer_logo">
-								<a href="https://www.morguard.com/news-knowledge/posts/cse2017-silverwin" target="_blank">
-								    <img src="//codecloud.cdn.speedyrails.net/sites/5afb34e36e6f646e4a5d0000/image/png/1539965304000/logo.png" alt="Morguard Safest Employer Award"/>
-								</a>
-							</div>
-							<div class="safe_emplyer_logo">
-								<a href="http://www.bomatoronto.org/" target="_blank">
-								    <img src="//codecloud.cdn.speedyrails.net/sites/5afb8d456e6f6436aa100000/image/png/1524067718311/BOMA BEST_Certified_Platinum_Transparent.png" alt="BOMA Best Certified Platinum"/>
-								</a>
-							</div>
+    						<div class="footer_logos">
+    							<div class="site_logo ">
+    								<router-link to="/"><img :src="property_logo" :alt="property.name"/></router-link>
+    							</div>
+    							<div class="footer_property">
+    								<a href="https://www.morguard.com/" target="_blank">
+    								<img src="//codecloud.cdn.speedyrails.net/sites/5afb8d456e6f6436aa100000/image/png/1524517405981/Morguard_White_3.5inch.png" class="" alt="Managed by Morguard">
+    								</a>
+    							</div>
+    							<div class="safe_emplyer_logo">
+    								<a href="https://www.morguard.com/news-knowledge/posts/cse2017-silverwin" target="_blank">
+    								    <img src="//codecloud.cdn.speedyrails.net/sites/5afb34e36e6f646e4a5d0000/image/png/1539965304000/logo.png" alt="Morguard Safest Employer Award"/>
+    								</a>
+    							</div>
+    							<div class="safe_emplyer_logo">
+    								<a href="http://www.bomatoronto.org/" target="_blank">
+    								    <img src="//codecloud.cdn.speedyrails.net/sites/5afb8d456e6f6436aa100000/image/png/1524067718311/BOMA BEST_Certified_Platinum_Transparent.png" alt="BOMA Best Certified Platinum"/>
+    								</a>
+    							</div>
+						    </div>
     						<div class="footer_nav hidden_phone">
     						    <nav id="primary_nav">
     								<ul>
