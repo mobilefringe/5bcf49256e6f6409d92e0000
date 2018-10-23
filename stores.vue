@@ -80,7 +80,7 @@
                     dataloaded: false,
                     mobile_store: false,
                     windowWidth: 0,
-                    storeBanner : null,
+                    pageBanner : null,
                     search_result : null,
                 }
             },
@@ -101,7 +101,7 @@
                     // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
                     var temp_repo = this.findRepoByName('Stores Banner');
                     if(temp_repo) {
-                        this.storeBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                     }
                     else {
                         
