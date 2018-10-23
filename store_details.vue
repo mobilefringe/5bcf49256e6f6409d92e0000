@@ -117,9 +117,11 @@
             },
             watch: {
                 currentStore: function() {
-                    if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        this.currentStore.store_front_url_abs = Site.default_logo_url;
-                    }
+                    if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                            this.currentStore.no_logo = true
+                        } else {
+                            this.currentStore.no_logo = false
+                        }
                     var vm = this;
                     var temp_promo = [];
                     var temp_job = [];
