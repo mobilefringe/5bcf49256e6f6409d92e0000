@@ -206,11 +206,11 @@
                     // http://via.placeholder.com/400x400/757575
                     var stores = this.processedStores;
                    stores.map(store => {
-                        if (_.includes(value.image_url, 'missing')) {
-                               value.no_store_logo = true;
-                            } else {
-                              value.no_store_logo = false;
-                            }
+                        if (_.includes(store.image_url, 'missing')) {
+                           store.no_store_logo = true;
+                        } else {
+                          store.no_store_logo = false;
+                        }
                     });
                     return this.processedStores;
                 },
