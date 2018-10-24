@@ -198,7 +198,9 @@
                     return this.processedCategories;
                 },
                 new_coming_soon_stores(){
-                    
+                    var filtered = _.filter(this.allStores, function(o, i) {
+                        return o.is_new_store || o.is_coming_store;
+                    });
                 },
                 dropDownCats() {
                     var cats = _.map(this.processedCategories, 'name');
