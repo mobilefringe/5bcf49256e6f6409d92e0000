@@ -13,7 +13,8 @@
             {
                 "name": "header.now_opening",
                 "href": "/stores",
-                "prop" : "new_store"
+                "prop" : "new_store",
+                "router_name" : "stores"
             },
             
             {
