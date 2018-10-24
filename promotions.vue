@@ -25,7 +25,7 @@
 							    <h4 class="event_store_name caps" v-else>{{promo.store.name_2}}</h4>
 							</div>
 							
-							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+							<p class="event_dates">   {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 							<p class="event_desc"  v-if="locale=='en-ca'" >{{promo.description_short}}</p>
 							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
 						
