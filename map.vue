@@ -11,7 +11,7 @@
 		<div class="site_container">
 			<div class="col-sm-4   padding_top_20">
                 <div class="map_directory text-center hidden_phone">
-                    <h3 class="map_title caps">{{$t("stores_page.find_store")}}</h3>
+                    <!--<h3 class="map_title caps">{{$t("stores_page.find_store")}}</h3>-->
                     <div id="stores_container" class="directory_list text-left">
                         <li v-for="store in filteredStores" class="pointer">
 							<p class="directory_store_name caps" v-on:click="addLandmark(store)">{{store.name}}</p>
