@@ -35,19 +35,19 @@
                             </div>
                             
                         </div>
-                        <div class="form-group account-btn text-left m-t-10">
+                        <div class="form-group account-btn m-t-10">
                             <div class="col-xs-12">
                                 <button class="contact_btn" type="submit" :disabled="formSuccess">Submit</button>
                             </div>
                         </div>
                     </form>
                     
-                    <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
+                    <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
                         Thank you for contacting us. A member from our team will contact you shortly.
                     </div>
-                    <div id="send_contact_error" class="alert alert-danger text-left" role="alert" v-show="formError">
+                    <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                         <span class="sr-only">Error:</span>
                         There was an error when trying to submit your request. Please try again later.
