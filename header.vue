@@ -83,7 +83,7 @@
     						        <router-link :to="item.href">{{$t(item.name)}}</router-link>
     						        <ul v-if="item.sub_menu">
     						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-    						                <router-link :to="{path:sub_menu.href, params: { category: feature.prop }} ">{{$t(sub_menu.name)}}</router-link>
+    						                <router-link :to="{path:sub_menu.href, params: { new_store: feature.prop }} ">{{$t(sub_menu.name)}}</router-link>
     						            </li>
     								</ul>
     						    </li>
