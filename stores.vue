@@ -197,6 +197,9 @@
                 allCatergories() {
                     return this.processedCategories;
                 },
+                new_coming_soon_stores(){
+                    
+                },
                 dropDownCats() {
                     var cats = _.map(this.processedCategories, 'name');
                     cats.unshift('All');
