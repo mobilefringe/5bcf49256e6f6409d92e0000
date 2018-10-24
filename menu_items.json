@@ -12,7 +12,8 @@
             },
             {
                 "name": "header.now_opening",
-                "href": "/stores"
+                "href": "/stores",
+                "prop" : "new_store"
             },
             
             {
