@@ -89,10 +89,10 @@
                 this.loadData().then(response => {
                     // this.currentPage = response[0].data;
                     if(response && response[0]){
-                        this.main = response[0].data
-                        if(response[0].data && response[0].data.subpages){
-                           this.currentPage = response[0].data.subpages[0];
-                        }
+                        this.currentPage = response[0].data
+                        // if(response[0].data && response[0].data.subpages){
+                        //   this.currentPage = response[0].data.subpages[0];
+                        // }
                     }
                     var temp_repo = this.findRepoByName('Contact Us Banner');
                     if(temp_repo) {
