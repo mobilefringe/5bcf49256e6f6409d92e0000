@@ -87,7 +87,7 @@
             },
             created(){
                 this.loadData().then(response => {
-                    this.currentPage = response[0].data;
+                    // this.currentPage = response[0].data;
                     if(response && response[0]){
                         this.main = response[0].data
                         if(response[0].data && response[0].data.subpages){
