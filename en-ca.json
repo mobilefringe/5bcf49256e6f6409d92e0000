@@ -70,7 +70,10 @@
     "hours" : "Hours",
     "reg_hours" : "Regular Shopping Hours",
     "extended_holiday_hours" : "Extended Holiday Hours",
-    "holiday_closures" : "Holiday Closures"
+    "holiday_closures" : "Holiday Closures",
+    "sunday": "Sunday",
+    "saturday" : "Saturday",
+    "mon_to_friday": "Mon - Friday"
   },
   "newsletter_page" : {
     "newsletter" : "Newsletter",
