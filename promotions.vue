@@ -20,10 +20,10 @@
 						<div class="col-sm-6 col-md-8 event_dets_container">
 							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
 							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
-							<div v-if="promo.promotionable_type == 'Store'" class="event_store_container">
+							<nuxt-link v-if="promo.promotionable_type == 'Store'" class="event_store_container">
 							    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{promo.store.name}}</h4>
 							    <h4 class="event_store_name caps" v-else>{{promo.store.name_2}}</h4>
-							</div>
+							</nuxt-link>
 							
 							<p class="event_dates">   {{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 							<p class="event_desc"  v-if="locale=='en-ca'" >{{promo.description_short}}</p>
