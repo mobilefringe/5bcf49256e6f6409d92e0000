@@ -14,7 +14,7 @@
                 "name": "header.now_opening",
                 "href": "/stores",
                 "prop" : "new_store",
-                "router_name" : "stores"
+                "router_name" : "storeList"
             },
             
             {
