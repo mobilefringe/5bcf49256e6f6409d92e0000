@@ -1,6 +1,6 @@
 <template>
 	<div class="promo_dets_container" v-if="currentPromo">
-		<div class="page_header" v-if="promoBanner" v-bind:style="{ backgroundImage: 'url(' + promoBanner.image_url + ')' }">
+		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content caps">
@@ -76,7 +76,7 @@
                     currentPromo: null,
                     storePromos : null,
                     storeHours : null,
-                    promoBanner : null
+                    pageBanner : null
                 }
             },
             beforeRouteUpdate(to, from, next) {
@@ -91,7 +91,7 @@
                     this.updateCurrentPromo(this.id);
                     var temp_repo = this.findRepoByName('Promos Banner');
                     if(temp_repo) {
-                        this.promoBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                     }
                     else {
                         this.pageBanner = {};
