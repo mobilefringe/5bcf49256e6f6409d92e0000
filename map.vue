@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="site_container">
-			<div class="col-sm-4   padding_top_20">
+			<div class="col-sm-3   padding_top_20">
                 <div class="map_directory text-center hidden_phone">
                     <!--<h3 class="map_title caps">{{$t("stores_page.find_store")}}</h3>-->
                     <div id="stores_container" class="directory_list text-left">
@@ -25,7 +25,7 @@
 				    </div>
                 </div>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-9">
             <div class="padding_top_20 map light_border">
 				<png-map ref="pngmap_ref" :png-map-url="getPNGurl" :initial-position="'700 450'" @updateMap="updatePNGMap"></png-map>
 			</div>
