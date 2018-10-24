@@ -45,7 +45,8 @@
     "store_dets_loc" : "Store Details & Location",
     "about_us" : "About Us",
     "find_store" : "Find Store",
-    "select_a_store" : "Select a Store"
+    "select_a_store" : "Select a Store",
+    "search_stores": "Search Stores"
   },
   "promos_page": {
     "promotions" : "Promotions",
