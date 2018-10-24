@@ -29,8 +29,8 @@
 							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
 						
 							<div class="text-right  col-sm-6" v-if="promo" style="padding:0">
-								<router-link :to="'/promotions/'+ promo.slug" class="event_learn_more pull-left">
-								   {{$t("promos_page.read_more")}} <i class="fa fa-angle-right" aria-hidden="true"></i>
+								<router-link :to="'/promotions/'+ promo.slug" class="event_learn_more pull-left hvr-icon-wobble-horizontal">
+								   {{$t("promos_page.read_more")}} <i class="fa fa-angle-right hvr-icon" aria-hidden="true"></i>
 							    </router-link>
 								<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="_.truncate(promo.description, {'length': 99})" twitter-user="EastgateSquare" :media="promo.image_url" inline-template >
 									<div class="blog-social-share pull_right">
