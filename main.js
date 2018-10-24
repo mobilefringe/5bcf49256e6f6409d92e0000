@@ -42,7 +42,7 @@ require.config({
         'mousewheel' : 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min',
         'mapplic' : 'https://preview-mmvue.codecloudapp.com/mapplic',
         'hammer' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min',
-        'mapplic-map' : 'https://preview-mmvue.codecloudapp.com/mapplic.vue?noext',
+        'mapplic-map' : 'https://preview-mmvue.codecloudapp.com/mapplic.vue?noext'
     }
 });
 
@@ -154,6 +154,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                         version: "v4"
                     });
                     await Promise.all([this.$store.dispatch("getData", "property")]);
+                    this.property.mm_host = this.property.mm_host.replace("http:", "");
                     // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
                     let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores")]);
                     return results;
