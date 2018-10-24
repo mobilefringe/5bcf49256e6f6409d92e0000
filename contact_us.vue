@@ -19,26 +19,21 @@
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-12" :class="{'has-error': errors.has('name')}">
-                                <label class="label" for="name">Name</label>
+                                <label class="label" for="name" style="display:none;">Name</label>
                                 <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Name" data-vv-delay="500">
                                 <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
                             <div class="col-sm-12" :class="{'has-error': errors.has('email')}">
-                                <label class="label" for="email">Email</label>
+                                <label class="label" for="email" style="display:none;">Email</label>
                                 <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="Email" data-vv-delay="500">
                                 <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                             </div>
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
-                                <label class="label" for="message">Message</label>
+                                <label class="label" for="message" style="display:none;">Message</label>
                                 <textarea v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" placeholder="Message" data-vv-delay="500"></textarea>
                                 <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                             </div>
-                            <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
-                                <label class="label" for="validate">Enter the following number below to proceed: {{correctValNum}}</label> 
-                                <input v-model="validaNum" v-validate="'required|numeric|min:6|max:6'" class="form-control" :class="{'input': true}" name="validate" type="text" placeholder="Enter above number" data-vv-delay="500">
-                                <span v-show="errors.has('validate')" class="form-control-feedback">{{ errors.first('validate') }}</span>
-                                <span v-if="validaNum.length === 6 && validaNum !== correctValNum && errors.first('validate') == null" class="form-control-feedback" :class="{shake_element : validNumError}">Please enter correct number</span>
-                            </div>
+                            
                         </div>
                         <div class="form-group account-btn text-left m-t-10">
                             <div class="col-xs-12">
