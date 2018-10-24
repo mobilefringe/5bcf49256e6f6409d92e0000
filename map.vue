@@ -125,14 +125,29 @@
                 getSVGMap(){
                   return "//mallmaverick.com"+this.property.svgmap_url;  
                 },
-                svgMapRef() {
-                    return _.filter(this.$children, function(o) {
-                        return (o.$el.className == "svg-map")
-                    })[0];
-                },
-                getStoreById(){
+                floorList () {
+                    var floor_list = [];
                     
-                },
+                    var floor_1 = {};
+                    floor_1.id = "first-floor";
+                    floor_1.title = "Level One";
+                    floor_1.map = this.getSVGMap;
+                    // floor_1.minimap = this.miniOne;
+                    floor_1.z_index = null;
+                    floor_1.show = true;
+                    floor_list.push(floor_1);
+                    
+                    // var floor_2 = {};
+                    // floor_2.id = "second-floor";
+                    // floor_2.title = "Level Two";
+                    // floor_2.map = this.floorTwo;
+                    // // floor_2.minimap = this.miniTwo;
+                    // floor_2.z_index = 2;
+                    // floor_2.show = false;
+                    // floor_list.push(floor_2);
+                    
+                    return floor_list;
+                }
                 filterStores() {
                     letter = this.selectedAlpha;
                     if (letter == "All") {
