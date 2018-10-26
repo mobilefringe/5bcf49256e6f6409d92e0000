@@ -30,8 +30,13 @@
         }]
     },
     {
-        "name": "header.events",
-        "href": "/events"
+        "name": "header.promos",
+        "href": "#",
+        "sub_menu": [{
+           "name": "header.events",
+            "href": "/events"
+        }]
+        
     },
     {
         "name": "header.guest_services",
