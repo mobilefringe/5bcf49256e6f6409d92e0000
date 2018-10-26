@@ -46,7 +46,8 @@
     "about_us" : "About Us",
     "find_store" : "Find Store",
     "select_a_store" : "Select a Store",
-    "search_stores": "Search Stores"
+    "search_stores": "Search Stores",
+    "new_stores": "Now Open / Coming Soon"
   },
   "promos_page": {
     "promotions" : "Promotions",
