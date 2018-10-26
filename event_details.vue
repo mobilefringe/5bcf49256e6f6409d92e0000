@@ -81,11 +81,11 @@
                     if(this.currentEvent != null) {
                         console.log(this.currentEvent.store);
                         if (this.currentEvent.store != null && this.currentEvent.store != undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
-                            this.currentEvent.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                            this.currentEvent.store.image_url = Site,default_logo_url
                         }
                         else if (this.currentEvent.store == null || this.currentEvent.store == undefined) {
                             this.currentEvent.store = {};
-                            this.currentEvent.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                            this.currentEvent.store.image_url =  Site.default_logo_url
                         }
                         var vm = this;
                         var temp_event = [];
