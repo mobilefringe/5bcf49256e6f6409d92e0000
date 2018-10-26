@@ -60,16 +60,20 @@
                 "href": "/pages/bonniedoon-services"
             },
             {
+                "name": "header.gift_card",
+                "href": "/pages/bonniedoon-gift-cards"
+            },
+            {
+                "name": "header.parking",
+                "href": "/pages/bonniedoon-gift-cards"
+            },
+            {
                 "name": "header.community",
                 "href": "/pages/bonniedoon-community-support"
             },
             {
                 "name": "header.green_initiatives",
                 "href": "/pages/bonniedoon-green-initiatives"
-            },
-            {
-                "name": "header.gift_card",
-                "href": "/pages/bonniedoon-gift-cards"
             }
         ]
     },
