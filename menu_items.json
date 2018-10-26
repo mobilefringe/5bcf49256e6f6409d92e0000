@@ -39,11 +39,11 @@
             },
             {
                 "name": "header.news",
-                "href": "/events"
+                "href": "/pages/thecentre-news"
             },
             {
                 "name": "header.development",
-                "href": "/events"
+                "href": "/pages/thecentre-movies-for-mommies"
             },
             {
                 "name": "header.movies_for_mommies",
