@@ -87,7 +87,7 @@
                     //   console.log("this.filteredStores", this.filteredStores)
                       
                     // } else {
-                    this.filteredStores = this.new_coming_soon_stores;
+                    this.filteredStores = this.allStores;
                     // }
                 });
             },
@@ -154,15 +154,17 @@
 
                 ]),
                 allStores() {
-                    var stores = this.processedStores;
-                   stores.map(store => {
+                    var stores  = _.filter(this.processedStores, function(o, i) {
+                        return o.is_new_store || o.is_coming_soon_store;
+                    });
+                    stores.map(store => {
                         if (_.includes(store.image_url, 'missing')) {
                            store.no_store_logo = true;
                         } else {
                           store.no_store_logo = false;
                         }
                     });
-                    return this.processedStores;
+                    return stores;
                 },
                 allCatergories() {
                     return this.processedCategories;
