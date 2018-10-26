@@ -42,7 +42,7 @@
 </template>
 
 <script>
-    define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
+    define(['Vue', 'vuex', 'moment', 'vue-lazy-load', "json!site.json"], function(Vue, Vuex, moment, VueLazyload, Site) {
         Vue.use(VueLazyload);
         return Vue.component("event-details-component", {
             template: template, // the variable template will be injected,
