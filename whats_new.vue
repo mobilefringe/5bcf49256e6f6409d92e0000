@@ -87,7 +87,7 @@
                     //   console.log("this.filteredStores", this.filteredStores)
                       
                     // } else {
-                    this.filteredStores = this.allStores;
+                    this.filteredStores = this.new_coming_soon_stores;
                     // }
                 });
             },
