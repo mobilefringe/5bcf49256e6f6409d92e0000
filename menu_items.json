@@ -12,9 +12,7 @@
             },
             {
                 "name": "header.now_opening",
-                "href": "/whats_new",
-                "prop" : "new_store",
-                "router_name" : "storeList"
+                "href": "/whats_new"
             },
             
             {
