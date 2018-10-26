@@ -244,10 +244,10 @@
                     }
                 },
                 updatePNGMap(map) {
-                    this.map = map;
-                    console.log("in updatepng");
-                    this.addLandmark(this.currentStore);
-                },
+      this.map = map;
+      console.log("in updatepng")
+      this.dropPin(this.currentStore);
+    },
             }
         });
     });
