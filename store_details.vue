@@ -214,6 +214,21 @@
                     'findRepoByName',
                     'findHourById'
                 ]),
+                allStores() {
+      var store_list = [];
+      var vm = this;
+      _.forEach(this.processedStores, function(value, key) {
+        if (_.includes(value.store_front_url_abs, "missing")) {
+          value.no_store_logo = true;
+        } else {
+          value.no_store_logo = false;
+        }
+        value.zoom = 1;
+        store_list.push(value);
+        // }
+      });
+      return store_list;
+    },
                 getPNGurl () {
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
