@@ -78,7 +78,7 @@ define([], function() {
             }]
         },
         {
-            path: '/map',
+            path: '/whats_new',
             component: view('default'),
             children: [{
                 path: '',
