@@ -25,7 +25,7 @@
         "name": "header.promos",
         "href": "#",
         "sub_menu": [{
-            "name": "header.promos",
+            "name": "header.store_promos",
         "href": "/promotions"
         }]
     },
