@@ -1,6 +1,6 @@
 <template>
 	<div v-if="dataloaded">
-		<div class="page_header" v-if="promoBanner" v-bind:style="{ backgroundImage: 'url(' + promoBanner.image_url + ')' }">
+		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content cap">
 					<h1>{{$t("jobs_page.jobs")}}</h1>
@@ -78,7 +78,7 @@
                     selectedDate: null,
                     filteredPromos:[],
                     dataloaded: false,
-                    promoBanner: null,
+                    pageBanner: null,
                     paginate: ['promos'],
                     promos : null
                 }
@@ -89,7 +89,7 @@
                     
                     var temp_repo = this.findRepoByName('Jobs Banner');
                     if(temp_repo) {
-                        this.promoBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                     }
                    else {
                         this.pageBanner = {};
