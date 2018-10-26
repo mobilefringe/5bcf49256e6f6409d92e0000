@@ -1,6 +1,6 @@
 <template>
 	<div v-if="dataloaded">
-		<div class="page_header" v-if="promoBanner" v-lazy:background-image="promoBanner.image_url">
+		<div class="page_header" v-if="pageBanner" v-lazy:background-image="pageBanner.image_url">
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content caps">
@@ -137,7 +137,7 @@
             data: function() {
                 return {
                     dataloaded: false,
-                    promoBanner: null,
+                    pageBanner: null,
                     paginate: ['events']
                 }
             },
@@ -147,7 +147,7 @@
                     
                     var temp_repo = this.findRepoByName('Events Banner');
                     if(temp_repo) {
-                        this.promoBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                     }
                     else {
                         this.pageBanner = {};
