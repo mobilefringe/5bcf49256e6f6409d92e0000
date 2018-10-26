@@ -53,10 +53,10 @@
         
     },
     {
-        "name": "header.guest_services",
+        "name": "header.centre_info",
         "href": "#",
         "sub_menu": [{
-                "name": "header.services ",
+                "name": "header.guest_services ",
                 "href": "/pages/bonniedoon-services"
             },
             {
