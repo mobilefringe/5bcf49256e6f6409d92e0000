@@ -81,7 +81,7 @@
                     if(this.currentEvent != null) {
                         console.log(this.currentEvent.store);
                         if (this.currentEvent.store != null && this.currentEvent.store != undefined && _.includes(this.currentEvent.store.image_url, 'missing')) {
-                            this.currentEvent.store.image_url = Site,default_logo_url
+                            this.currentEvent.store.image_url = Site.default_logo_url
                         }
                         else if (this.currentEvent.store == null || this.currentEvent.store == undefined) {
                             this.currentEvent.store = {};
