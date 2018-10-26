@@ -51,7 +51,7 @@
 <script>
     define(["Vue", "vuex", "vue-select", "jquery", "vue!search-component", "vue-lazy-load", 'json!site.json', "vue!storelist_masonry.vue"], function(Vue, Vuex, VueSelect, $, SearchComponent,VueLazyload, Site, StoreMasonry) {
         Vue.use(VueLazyload);
-        return Vue.component("stores-component", {
+        return Vue.component("whats-new-component", {
             template: template, // the variable template will be injected
             props: ['new_store'],
             data: function() {
