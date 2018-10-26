@@ -15,17 +15,16 @@
     "development": "Development",
     "movies_for_mommies": "Movies for Mommies",
     "centre_info": "Centre Info",
-    "hours": "Hours",
     "guest_services" : "Guest Services",
     "gift_card" : "Gift Card",
-    "find_us" : "Find Us",
     "parking" : "Paking & Accessibility",
     "community" : "Community Support",
     "green_initiatives" : "Green Initiatives",
-    "code_of_conduct" : "Code of Conduct",
-    "contact_us" : "Contact Us",
-   
     
+    "contact_us" : "Contact Us",
+   "hours": "Hours",
+     "find_us" : "Find Us",
+     "code_of_conduct" : "Code of Conduct",
     "newsletter" : "Newsletter"
   },
   "footer": {
