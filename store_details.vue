@@ -225,8 +225,8 @@
                         }
                         value.zoom = 1;
                         store_list.push(value);
-                  });
-                  return store_list;
+                    });
+                    return store_list;
                 },
                 getPNGurl () {
                     return "https://www.mallmaverick.com" + this.property.map_url;
