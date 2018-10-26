@@ -96,6 +96,10 @@
             {
                 "name": "header.leasing",
                 "href": "/leasing"
+            },
+            {
+                "name": "header.code_of_conduct",
+                "href": "/leasing"
             }
         ]
     }
