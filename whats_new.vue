@@ -58,7 +58,6 @@
                 return {
                     listMode: "alphabetical",
                     selectedCat: null,
-                    selectedAlpha: "All",
                     filteredStores: null,
                     dataloaded: false,
                     mobile_store: false,
