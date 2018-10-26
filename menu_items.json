@@ -33,7 +33,7 @@
         "name": "header.promos",
         "href": "#",
         "sub_menu": [{
-           "name": "header.events",
+            "name": "header.events",
             "href": "/events"
         }]
         
