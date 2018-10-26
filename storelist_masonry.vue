@@ -34,3 +34,11 @@
         </transition-group>
     </div>
 </template>
+<script>
+    define(["Vue", "vuex",  "masonry","vue-masonry-plugin"], function(Vue, Vuex, Lightbox) {
+        Vue.use(Lightbox);
+        return Vue.component("social-links", {
+            template: template, // the variable template will be injected,
+        });
+    });
+</script>
