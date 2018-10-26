@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', "vue!google_map"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate, GoogleMapAPI) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', "vue!google-map"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate, GoogleMapAPI) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("find-us-component", {
