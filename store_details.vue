@@ -28,7 +28,7 @@
 				<div class="col-sm-8 promo_image_container text-left">
 					<div class="col-sm-12 no_padding">
 						<!--<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" :initial-position="'700 450'" :height="_.toNumber('625')" @updateMap="updatePNGMap"></png-map>-->
-						<mapplic-map ref="mapplic_ref" :height="650" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details" @updateMap="updatePNGMap"></mapplic-map>
+						<mapplic-map ref="mapplic_ref" :height="400" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details" @updateMap="updatePNGMap"></mapplic-map>
 					</div>
 				</div>
 			</div>
@@ -238,7 +238,6 @@
                     floor_1.id = "first-floor";
                     floor_1.title = "Level One";
                     floor_1.map = this.getSVGMap;
-                    // floor_1.minimap = this.miniOne;
                     floor_1.z_index = null;
                     floor_1.show = true;
                     floor_list.push(floor_1);
