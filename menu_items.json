@@ -57,23 +57,23 @@
         "href": "#",
         "sub_menu": [{
                 "name": "header.guest_services ",
-                "href": "/pages/bonniedoon-services"
+                "href": "/pages/thecentre-services"
             },
             {
                 "name": "header.gift_card",
-                "href": "/pages/bonniedoon-gift-cards"
+                "href": "/pages/thecentre-gift-cards"
             },
             {
                 "name": "header.parking",
-                "href": "/pages/bonniedoon-gift-cards"
+                "href": "/pages/thecentre-gift-cards"
             },
             {
                 "name": "header.community",
-                "href": "/pages/bonniedoon-community-support"
+                "href": "/pages/thecentre-community-support"
             },
             {
                 "name": "header.green_initiatives",
-                "href": "/pages/bonniedoon-green-initiatives"
+                "href": "/pages/thecentre-green-initiatives"
             }
         ]
     },
