@@ -9,8 +9,9 @@
     "promos" : "Promotions",
     "store_promos" : "Promotions",
     "jobs" : "Employment",
-    "events" : "Events",
     "whats_happening": "What's Happening",
+    
+    "events" : "Events",
     "guest_services" : "Guest Services",
     "services" : "Services",
     "community" : "Community Services",
