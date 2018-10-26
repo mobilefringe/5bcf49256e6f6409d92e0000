@@ -11,7 +11,7 @@
 		<div>
 			<div class="row text-left">
 				<div style="height: 300px;margin-bottom:-30px;">
-	            <google-map :property="property"></google-map>
+	                <google-map :property="property"></google-map>
 	            </div>
                 <div class="text-left site_container padding_tb_30 inside_page_content" v-if="currentPage" v-html="currentPage.body"></div>
 					
