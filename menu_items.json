@@ -95,11 +95,11 @@
             },
             {
                 "name": "header.leasing",
-                "href": "/leasing"
+                "href": "/pages/thecentre-leasing"
             },
             {
                 "name": "header.code_of_conduct",
-                "href": "/pages-thecentre-code_of_conduct"
+                "href": "/pages/thecentre-code_of_conduct"
             }
         ]
     }
