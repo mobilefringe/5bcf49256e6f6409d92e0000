@@ -30,7 +30,7 @@
         }]
     },
     {
-        "name": "header.promos",
+        "name": "header.whats-happening",
         "href": "#",
         "sub_menu": [{
             "name": "header.events",
