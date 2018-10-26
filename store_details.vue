@@ -27,7 +27,8 @@
 				</div>
 				<div class="col-sm-8 promo_image_container text-left">
 					<div class="col-sm-12 no_padding">
-						<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" :initial-position="'700 450'" :height="_.toNumber('625')" @updateMap="updatePNGMap"></png-map>
+						<!--<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" :initial-position="'700 450'" :height="_.toNumber('625')" @updateMap="updatePNGMap"></png-map>-->
+						<mapplic-map ref="mapplic_ref" :height="650" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
 					</div>
 				</div>
 			</div>
