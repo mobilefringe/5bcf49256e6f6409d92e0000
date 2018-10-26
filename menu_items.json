@@ -30,7 +30,7 @@
         }]
     },
     {
-        "name": "header.whats-happening",
+        "name": "header.whats_happening",
         "href": "#",
         "sub_menu": [
             {
