@@ -57,7 +57,7 @@
         "href": "#",
         "sub_menu": [{
                 "name": "header.guest_services ",
-                "href": "/pages/thecentre-services"
+                "href": "/pages/thecentre-guest-services"
             },
             {
                 "name": "header.gift_card",
