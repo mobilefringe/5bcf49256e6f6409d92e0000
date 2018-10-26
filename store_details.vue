@@ -236,11 +236,12 @@
                         this.$router.replace('/');
                     }
                 },
-                // updateSVGMap(map) {
-                //     this.map = map;
-                // },
-                addLandmark(store) {
-                    this.pngMapRef.addMarker(store);
+                dropPin(store) {
+                    if (this.windowWidth <= 768) {
+                        this.svgMapRef.showLocation(store.id);
+                    } else if (this.windowWidth > 768) {
+                        this.svgMapRef.showLocation(store.id);
+                    }
                 },
                 updatePNGMap(map) {
                     this.map = map;
