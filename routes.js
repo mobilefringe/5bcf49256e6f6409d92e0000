@@ -82,8 +82,8 @@ define([], function() {
             component: view('default'),
             children: [{
                 path: '',
-                component: view('map'),
-                name: 'map'
+                component: view('whats_new'),
+                name: 'whatsNew'
             }]
         },
         {
