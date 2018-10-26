@@ -186,18 +186,18 @@
                         return (o.$el.className == "svg-map")
                     })[0];
                 },
-                filterStores() {
-                    console.log("filterStores")
-                    letter = this.selectedAlpha;
-                    if (letter == "All") {
-                        this.filteredStores = this.allStores;
-                    } else {
-                        var filtered = _.filter(this.allStores, function(o, i) {
-                            return _.lowerCase(o.name)[0] == _.lowerCase(letter);
-                        });
-                        this.filteredStores = filtered;
-                    }
-                },
+                // filterStores() {
+                //     console.log("filterStores")
+                //     letter = this.selectedAlpha;
+                //     if (letter == "All") {
+                //         this.filteredStores = this.allStores;
+                //     } else {
+                //         var filtered = _.filter(this.allStores, function(o, i) {
+                //             return _.lowerCase(o.name)[0] == _.lowerCase(letter);
+                //         });
+                //         this.filteredStores = filtered;
+                //     }
+                // },
                 filterByCategory() {
                     console.log("filterByCategory")
                     category_id = this.selectedCat;
