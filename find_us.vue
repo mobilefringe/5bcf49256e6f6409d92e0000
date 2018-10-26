@@ -10,8 +10,10 @@
 		<!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div>
 			<div class="row text-left">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1405.0774986332171!2d-113.45766032569233!3d53.52063222563502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc85d0c9c289d88ad!2sBonnie+Doon+Shopping+Centre!5e0!3m2!1sen!2sca!4v1517707745783" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1405.0774986332171!2d-113.45766032569233!3d53.52063222563502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc85d0c9c289d88ad!2sBonnie+Doon+Shopping+Centre!5e0!3m2!1sen!2sca!4v1517707745783" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+					<div style="height: 300px;margin-bottom:-30px;">
+		    <google-map :property="property"></google-map>
+		</div>
                 <div class="text-left site_container padding_tb_30 inside_page_content" v-if="currentPage" v-html="currentPage.body"></div>
 					
 			</div>
@@ -21,7 +23,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate'], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', "vue!google_map"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VeeValidate, GoogleMapAPI) {
         Vue.use(Meta);
         Vue.use(VeeValidate);
         return Vue.component("find-us-component", {
