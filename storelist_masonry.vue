@@ -39,6 +39,7 @@
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("social-links", {
             template: template, // the variable template will be injected,
+            props: ["filteredStores"]
         });
     });
 </script>
