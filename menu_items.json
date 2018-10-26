@@ -32,10 +32,25 @@
     {
         "name": "header.whats-happening",
         "href": "#",
-        "sub_menu": [{
-            "name": "header.events",
-            "href": "/events"
-        }]
+        "sub_menu": [
+            {
+                "name": "header.events",
+                "href": "/events"
+            },
+            {
+                "name": "header.news",
+                "href": "/events"
+            },
+            {
+                "name": "header.development",
+                "href": "/events"
+            },
+            {
+                "name": "header.events",
+                "href": "/events"
+            },
+            
+        ]
         
     },
     {
