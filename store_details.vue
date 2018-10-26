@@ -242,16 +242,6 @@
                     floor_1.z_index = null;
                     floor_1.show = true;
                     floor_list.push(floor_1);
-                    
-                    // var floor_2 = {};
-                    // floor_2.id = "second-floor";
-                    // floor_2.title = "Level Two";
-                    // floor_2.map = this.floorTwo;
-                    // // floor_2.minimap = this.miniTwo;
-                    // floor_2.z_index = 2;
-                    // floor_2.show = false;
-                    // floor_list.push(floor_2);
-                    
                     return floor_list;
                 },
             },
