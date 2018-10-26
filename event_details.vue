@@ -1,6 +1,6 @@
 <template>
 	<div class="event_dets_container" v-if="currentEvent">
-		<div class="page_header" v-if="eventBanner" v-bind:style="{ backgroundImage: 'url(' + eventBanner.image_url + ')' }">
+		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content caps">
 					<h1>{{$t("events_page.events")}}</h1>
@@ -51,7 +51,7 @@
                     currentEvent: null,
                     storeEvents : null,
                     storeHours : null,
-                    eventBanner : null
+                    pageBanner : null
                 }
             },
             props:['id', 'locale'],
@@ -67,7 +67,7 @@
                     this.updatecurrentEvent(this.id);
                     var temp_repo = this.findRepoByName('Events Banner');
                     if(temp_repo) {
-                        this.eventBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                     }
                     else {
                         this.pageBanner = {};
