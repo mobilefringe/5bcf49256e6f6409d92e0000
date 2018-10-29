@@ -25,7 +25,8 @@
 		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" >
                 <div v-masonry-tile class="item feature_item_container" >
                     <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
-                    	<div  :class="{ 'gallery-image' : feature.no_hover_class}"> 
+                    	<div class="gallery-image" > 
+                    	<!--:class="{ 'gallery-image' : feature.no_hover_class}"-->
                     	<!--class="ih-item circle effect19"-->
                     		<router-link v-if="feature.url" :to="feature.url">
                     			<img :src="feature.image_url" alt="name">
