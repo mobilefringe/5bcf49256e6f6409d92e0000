@@ -116,7 +116,8 @@
                     show_mobile_menu: false,
                     property_logo: "//codecloud.cdn.speedyrails.net/sites/5bcf49256e6f6409d92e0000/image/png/1540312877151/TC LOGO BLK.png",
                     inverted_property_logo:"//codecloud.cdn.speedyrails.net/sites/5bcf49256e6f6409d92e0000/image/png/1540842515166/TheCentreLogoWhite-01.png",
-                    menu_items: MenuItems
+                    menu_items: MenuItems,
+                    toggleVar: false
                 }
             },
             watch: {
