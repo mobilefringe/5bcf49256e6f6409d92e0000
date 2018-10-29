@@ -58,7 +58,7 @@
     							        </div>
     							    </li>
     							</ul>
-    							<span style="visibility:hidden">{{toggleVar}}</span>
+    							
     							<div class="small_hr"></div>
     							<div class="tel_num" v-if="property">
                                     <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
@@ -70,6 +70,7 @@
     							<div class="header_social">
     							    <social-links></social-links>
     							</div>
+    							<span style="visibility:hidden">{{toggleVar}}</span>
     							<div class="small_hr"></div>
     						</nav>
     					</transition>
