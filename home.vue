@@ -172,7 +172,13 @@
                         else {
                             value.masonry_class = " ";
                         }
-                        value.mobile_order = key + 1;
+                        if(key > 5){
+                            value.mobile_order = key + 1;
+                        }
+                        else {
+                            value.mobile_order = key;
+                        }
+                        
                     });
                     features = _.sortBy(features, [function(o) { return o.mobile_order; }]);
                     console.log(features);
