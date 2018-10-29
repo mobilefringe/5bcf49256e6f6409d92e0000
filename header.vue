@@ -56,7 +56,7 @@
                                                 </b-collapse>
                                             </b-card>
     							        </div>
-    							        
+    							        <span style="visibility:hidden">{{toggleVar}}</span>
     							    </li>
     							</ul>
     							<div class="small_hr"></div>
