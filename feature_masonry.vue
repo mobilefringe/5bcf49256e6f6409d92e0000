@@ -38,6 +38,7 @@
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("feature-masonry", {
             template: template, // the variable template will be injected,
+            props:['feature_items']
         });
     });
 </script>
