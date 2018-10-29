@@ -5,7 +5,7 @@
     			<div class="row top_bar_wrapper">
     				<div class="col-sm-6">
     					<div class="mobile_site_logo visible_phone">
-    					    <router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
+    					    <router-link to="/" class="hidden_hone"><img :src="property_logo" alt="Property Logo"/></router-link>
     					    <router-link to="/"><img :src="inverted_property_logo" alt="Property Logo"/></router-link>
     					    
     				    </div>
