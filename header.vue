@@ -56,9 +56,10 @@
                                                 </b-collapse>
                                             </b-card>
     							        </div>
-    							        <span style="visibility:hidden">{{toggleVar}}</span>
+    							        
     							    </li>
     							</ul>
+    							<span style="visibility:hidden">{{toggleVar}}</span>
     							<div class="small_hr"></div>
     							<div class="tel_num" v-if="property">
                                     <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
