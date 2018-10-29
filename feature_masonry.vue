@@ -13,8 +13,8 @@
     }
 </style>
 <script>
-    define(["Vue", "vuex",  'masonry' , 'vue-masonry-plugin'], function(Vue, Vuex, Lightbox) {
-        Vue.use(Lightbox);
+    define(["Vue", "vuex",  'masonry' , 'vue-masonry-plugin'], function(Vue, Vuex, masonry, VueMasonryPlugin) {
+        Vue.use(VueMasonryPlugin.default);
         return Vue.component("social-links", {
             template: template, // the variable template will be injected,
         });
