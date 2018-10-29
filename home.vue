@@ -172,8 +172,11 @@
                         else {
                             value.masonry_class = " ";
                         }
-                        if(key > 5){
+                        if(key > 4){
                             value.mobile_order = key + 1;
+                        }
+                        else if(){
+                            
                         }
                         else {
                             value.mobile_order = key;
