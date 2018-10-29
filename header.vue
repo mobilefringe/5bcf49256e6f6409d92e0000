@@ -27,7 +27,7 @@
     				<!--	<span></span>-->
     				<!--</div>-->
 
-                    <div class="menu">
+                    <div class="menu" @click="show_mobile_menu = !show_mobile_menu" :class="{ open: show_mobile_menu}">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"> </div>
