@@ -965,7 +965,7 @@ a.mapplic-zoomout-button {
 	}
 
 	.mapplic-element {
-		height: auto ;
+		height: auto !important;
 	}
 
 	.mapplic-search-form {
