@@ -104,7 +104,8 @@
                     jobs:[],
                     dataLoaded: false,
                     pageBanner : null ,
-                    storeHours :[]
+                    storeHours :[],
+                    windowWidth: 0;
                 }
             },
             props:['id', 'locale'],
