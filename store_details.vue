@@ -243,6 +243,11 @@
                     floor_list.push(floor_1);
                     return floor_list;
                 },
+                getMapHeight(){
+                    var height = 350;
+                    
+                    return height;
+                }
             },
             methods: {
                 loadData: async function() {
