@@ -150,7 +150,12 @@
                     return this.getTodayHours;
                 }
             },
-            
+            methods() {
+                closeMobileMenu(){
+        this.show_mobile_menu = false;
+        return true;
+    }
+            }
         });
     });
 </script>
