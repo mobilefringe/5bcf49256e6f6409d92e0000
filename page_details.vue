@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="site_container inside_page_content">
-            <div class="margin_side_20" >
+            <div class="" >
                 <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
                 <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
             </div>
