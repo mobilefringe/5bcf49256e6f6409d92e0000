@@ -115,11 +115,7 @@
                     'property',
                     'timezone',
                     'processedStores',
-                    'processedCategories',
-                    'storesByAlphaIndex',
-                    'storesByCategoryName',
-                    'findCategoryById',
-                    'findCategoryByName',
+                    '
                     'findRepoByName'
 
                 ]),
