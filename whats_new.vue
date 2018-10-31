@@ -157,9 +157,7 @@
                     return _.filter(this.$children, function(o) {
                         return (o.$el.className == "svg-map")
                     })[0];
-                },
-                
-                
+                }
             },
             beforeDestroy: function() {
                 window.removeEventListener('resize', this.getWindowWidth);
