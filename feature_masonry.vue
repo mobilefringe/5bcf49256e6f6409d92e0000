@@ -11,8 +11,8 @@
     				</div>
             	</div>
         	</router-link>
-            	<div v-else>
-            	    <div  :class="{ 'gallery-image' : feature.no_hover_class}"> 
+        	<div v-else>
+        	    <div  :class="{ 'gallery-image' : feature.no_hover_class}"> 
             	    <img :src="feature.image_url" alt="name">
     				<div class="figcaption">
     					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>
