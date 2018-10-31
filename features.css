@@ -246,8 +246,8 @@ html:not(.touch) .feature_item_container .gallery-image {
 
         .visible.mfp-title:after,
         &.mfp-ready .mfp-title:after {
-            left: -25px;
-            top: -25px;
+            left: -5px;
+            top: -5px;
         }
     }
 }
