@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="site_container inside_page_content">
-            <div class="" >
+            <div>
                 <div class="page_body description_text text_left" v-if="locale=='en-ca'" v-html="currentPage.body"></div>
                 <div class="page_body description_text text_left" v-else v-html="currentPage.body_2"></div>
             </div>
@@ -61,7 +61,6 @@
                 loadData: async function(id) {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        console.log("this.id", this.id);
                         let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "/pages/" + id + ".json"}),this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
