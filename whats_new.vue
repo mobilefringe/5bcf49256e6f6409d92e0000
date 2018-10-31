@@ -171,7 +171,6 @@
                 //     }
                 // },
                 filterByCategory() {
-                    console.log("filterByCategory")
                     category_id = this.selectedCat;
                     if (category_id == "All" || category_id == null || category_id == undefined) {
                         category_id = "All";
