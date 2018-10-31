@@ -117,10 +117,8 @@
             },
             methods: {
                 validateBeforeSubmit() {
-                    console.log("contact validateBeforeSubmit")
                     this.$validator.validateAll().then((result) => {
                     if (result) {
-                        this.validNumError = false;
                         let errors = this.errors;
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
