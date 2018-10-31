@@ -39,7 +39,10 @@
     									<router-link to="/"><img :src="inverted_property_logo" alt="Property Logo"/></router-link>
     								</div>
     								<li v-for="(item,key) in menu_items" class="menu_item">
-    							        <router-link :to="item.href" v-if="item.sub_menu == undefined">{{$t(item.name)}}</router-link>
+    								<span @click="closeMobileMenu()" v-if="item.sub_menu == undefined">
+    								     <router-link :to="item.href" >{{$t(item.name)}}</router-link>
+    								</span>
+    							       
     							        <div v-else>
     							            <b-card no-body class="mb-1">
                                                 <b-card-header header-tag="header" class="p-1" role="tab">
@@ -51,7 +54,7 @@
                                                 </b-card-header>
                                                 <b-collapse v-model="item.show_sub_menu" :id="$t(item.name)" :visible="item.show_sub_menu" accordion="my-accordion" role="tabpanel" class="accordion_body">
                                                     <b-card-body v-for="sub_menu in item.sub_menu">
-                                                        <p class="card-text"><router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link></p>
+                                                        <p class="card-text" @click="closeMobileMenu()"><router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link></p>
                                                     </b-card-body>
                                                 </b-collapse>
                                             </b-card>
