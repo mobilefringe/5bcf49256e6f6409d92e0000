@@ -231,15 +231,15 @@ html:not(.touch) .feature_item_container .gallery-image {
 
     .figcaption.visible:after,
     &:hover .figcaption:after {
-        left: -25px;
-        top: -25px;
+        left: -5px;
+        top: -5px;
     }
 }
 
 .feature_item_container {
     .touch .gallery-image .figcaption:after {
-        left: -25px;
-        top: -25px;
+        left: -5px;
+        top: -5px;
     }
 
     .mfp-with-zoom {
