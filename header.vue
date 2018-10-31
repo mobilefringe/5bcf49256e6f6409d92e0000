@@ -70,7 +70,7 @@
     							<div class="header_social">
     							    <social-links></social-links>
     							</div>
-    							<span style="visibility:hidden">{{toggleVar}}</span>
+    							<span style="visibility: hidden;width: 0;height: 0;display: inline-block;">{{toggleVar}}</span>
     							<div class="small_hr"></div>
     						</nav>
     					</transition>
