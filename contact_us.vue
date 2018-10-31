@@ -117,6 +117,7 @@
             },
             methods: {
                 validateBeforeSubmit() {
+                    console.log("contact validateBeforeSubmit")
                     this.$validator.validateAll().then((result) => {
                     if (result && (this.correctValNum === this.validaNum)) {
                         this.validNumError = false;
