@@ -13,7 +13,7 @@
     </div>
 </template>
 <style>
-    #thank_you_container div{
+    #thank_you_container .content{
         padding: 20px 0 40px;
     }
 </style>
