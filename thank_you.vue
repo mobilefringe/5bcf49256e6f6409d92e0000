@@ -7,14 +7,14 @@
 				</div>
 			</div>
 		</div>  
-        <div class="row">
+        <div class="content">
             Your subscription has been confirmed. You've been added to our list and will hear from us soon.
         </div>
     </div>
 </template>
 <style>
     #thank_you_container div{
-            padding: 20px 0 40px;
+        padding: 20px 0 40px;
     }
 </style>
 <script>
