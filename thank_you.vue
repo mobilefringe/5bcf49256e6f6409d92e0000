@@ -18,13 +18,43 @@
     }
 </style>
 <script>
-    define(["Vue"], function(Vue) {
+    define(["Vue", "vuex"], function(Vue, Vuex) {
         return Vue.component("thank-you-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    title: "title"
+                    title: "title",
+                    pageBanner: null
                 }
+            },
+            created () {
+                this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Newsletter Banner');
+                    if(temp_repo) {
+                        this.pageBanner = temp_repo.images[0];
+                    }
+                    else {
+                        this.pageBanner = {};
+                        this.pageBanner.image_url="";
+                    }
+                });    
+            },
+            mounted () {
+                this.form_data.email = this.$route.query.email;
+                $("#newsletter_email").val(this.form_data.email);
+            },
+            watch : {
+                $route () {
+                    this.form_data.email = this.$route.query.email;
+                    $("#newsletter_email").val(this.form_data.email);
+                }
+            },
+            computed: {
+                ...Vuex.mapGetters([
+                    'property',
+                    'timezone',
+                    'findRepoByName'
+                ])
             }
         });
     });
