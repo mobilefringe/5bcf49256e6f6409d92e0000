@@ -169,6 +169,18 @@
                     var share_url = "https://mallmaverick.ca/jobs/" + slug;
                     return share_url;
                 },
+                checkimageURL(value){
+                    
+                    if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
+                       return Site.default_logo_url;
+                    }
+                    else if (value.store == null || value.store == undefined) {
+                       return Site.default_logo_url;
+                    }
+                    else {
+                        return value.store.store_front_url_abs;
+                    }
+                }
             }
         });
     });
