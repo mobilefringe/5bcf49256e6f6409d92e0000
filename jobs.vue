@@ -70,7 +70,7 @@
         Vue.use(Meta);
         Vue.use(VueLazyload);
         Vue.use(VuePaginate);
-        console.log("Site", Site)
+        
         return Vue.component("promos-component", {
             template: template, // the variable template will be injected
             props:['locale'],
@@ -85,6 +85,7 @@
                 }
             },
             created() {
+                console.log("Site", Site)
                 this.loadData().then(response => {
                     this.dataloaded = true;
                     
