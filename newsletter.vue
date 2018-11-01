@@ -122,7 +122,7 @@
                                 form.preventDefault();
                                 console.log("No Error", form);
                                 var vm = this;
-                                form.target.submite();
+                                form.target.submit();
                                 // $.getJSON(
                                 // form.target.action + "?callback=?",
                                 // $(form.target).serialize(),
