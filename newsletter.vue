@@ -10,7 +10,7 @@
         <div class="site_container">
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <form class="form-horizontal" action="https://mobilefringe.createsend.com/t/d/s/silhht/" method="post" >
+                    <form class="form-horizontal" action="https://mobilefringe.createsend.com/t/d/s/silhht/" method="post" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12 text-left" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
@@ -109,35 +109,35 @@
                 ])
             },
             methods: {
-                // validateBeforeSubmit(form) {
-                //     this.$validator.validateAll().then((result) => {
-                //         if (result) {
-                //             let errors = this.errors;
+                validateBeforeSubmit(form) {
+                    this.$validator.validateAll().then((result) => {
+                        if (result) {
+                            let errors = this.errors;
                             
-                //             if(errors.length > 0) {
-                //                 console.log("Error");
-                //                 this.formError = true;
-                //             }
-                //             else {
-                //                 form.preventDefault();
-                //                 console.log("No Error", form);
-                //                 var vm = this;
-                //                 form.target.submite();
-                //                 // $.getJSON(
-                //                 // form.target.action + "?callback=?",
-                //                 // $(form.target).serialize(),
-                //                 // function (data) {
-                //                 //     if (data.Status === 400) {
-                //                 //       vm.formError = true;
-                //                 //     } else { // 200
-                //                 //         vm.formSuccess = true;
-                //                 //     }
-                //                 // });
+                            if(errors.length > 0) {
+                                console.log("Error");
+                                this.formError = true;
+                            }
+                            else {
+                                form.preventDefault();
+                                console.log("No Error", form);
+                                var vm = this;
+                                form.target.submite();
+                                // $.getJSON(
+                                // form.target.action + "?callback=?",
+                                // $(form.target).serialize(),
+                                // function (data) {
+                                //     if (data.Status === 400) {
+                                //       vm.formError = true;
+                                //     } else { // 200
+                                //         vm.formSuccess = true;
+                                //     }
+                                // });
                                 
-                //             }
-                //         }
-                //     })
-                // },
+                            }
+                        }
+                    })
+                },
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
