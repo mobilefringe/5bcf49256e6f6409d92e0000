@@ -10,7 +10,7 @@
         <div class="site_container">
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <form class="form-horizontal" action="https://mobilefringe.createsend.com/t/d/s/silhht/" method="post" >
+                    <form class="form-horizontal" action="https://mobilefringe.createsend.com/t/d/s/silhht/" method="post" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12 text-left" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
@@ -122,16 +122,17 @@
                                 form.preventDefault();
                                 console.log("No Error", form);
                                 var vm = this;
-                                $.getJSON(
-                                form.target.action + "?callback=?",
-                                $(form.target).serialize(),
-                                function (data) {
-                                    if (data.Status === 400) {
-                                       vm.formError = true;
-                                    } else { // 200
-                                        vm.formSuccess = true;
-                                    }
-                                });
+                                form.target.submite();
+                                // $.getJSON(
+                                // form.target.action + "?callback=?",
+                                // $(form.target).serialize(),
+                                // function (data) {
+                                //     if (data.Status === 400) {
+                                //       vm.formError = true;
+                                //     } else { // 200
+                                //         vm.formSuccess = true;
+                                //     }
+                                // });
                                 
                             }
                         }
