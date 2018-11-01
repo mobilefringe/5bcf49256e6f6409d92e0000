@@ -1,5 +1,5 @@
 <template>
-    <div class="page_container" id="thank_you_container">
+    <div id="thank_you_container">
         <div  v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content">
@@ -7,7 +7,7 @@
 				</div>
 			</div>
 		</div>  
-        <div class="content">
+        <div class="content site_container">
             Your subscription has been confirmed. You've been added to our list and will hear from us soon.
         </div>
     </div>
