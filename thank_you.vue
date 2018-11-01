@@ -39,16 +39,7 @@
                     }
                 });    
             },
-            mounted () {
-                this.form_data.email = this.$route.query.email;
-                $("#newsletter_email").val(this.form_data.email);
-            },
-            watch : {
-                $route () {
-                    this.form_data.email = this.$route.query.email;
-                    $("#newsletter_email").val(this.form_data.email);
-                }
-            },
+            
             computed: {
                 ...Vuex.mapGetters([
                     'property',
