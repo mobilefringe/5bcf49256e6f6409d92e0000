@@ -1,6 +1,6 @@
 <template>
     <div class="page_container" id="thank_you_container">
-        <div  v-if="pageBanner" class="page_header">
+        <div  v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<div class="site_container">
 				<div class="header_content">
 					<h1>{{$t("newsletter_page.newsletter")}}</h1>
