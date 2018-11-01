@@ -148,7 +148,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://mallmaverick.ca/jobs/" + slug;
+                    var share_url = "https://www.thecentremall.com/jobs/" + slug;
                     return share_url;
                 },
                 checkimageURL(value){
