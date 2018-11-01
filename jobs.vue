@@ -85,7 +85,6 @@
                 }
             },
             created() {
-                console.log("Site", this)
                 this.loadData().then(response => {
                     this.dataloaded = true;
                     
