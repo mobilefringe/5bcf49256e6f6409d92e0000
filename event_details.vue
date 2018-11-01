@@ -145,7 +145,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://mallmaverick.ca/event/" + slug;
+                    var share_url = "https://www.thecentremall.com/event/" + slug;
                     return share_url;
                 },
             }
