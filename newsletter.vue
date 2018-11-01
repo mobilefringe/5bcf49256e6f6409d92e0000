@@ -109,35 +109,35 @@
                 ])
             },
             methods: {
-                validateBeforeSubmit(form) {
-                    this.$validator.validateAll().then((result) => {
-                        if (result) {
-                            let errors = this.errors;
+                // validateBeforeSubmit(form) {
+                //     this.$validator.validateAll().then((result) => {
+                //         if (result) {
+                //             let errors = this.errors;
                             
-                            if(errors.length > 0) {
-                                console.log("Error");
-                                this.formError = true;
-                            }
-                            else {
-                                form.preventDefault();
-                                console.log("No Error", form);
-                                var vm = this;
-                                form.target.submite();
-                                // $.getJSON(
-                                // form.target.action + "?callback=?",
-                                // $(form.target).serialize(),
-                                // function (data) {
-                                //     if (data.Status === 400) {
-                                //       vm.formError = true;
-                                //     } else { // 200
-                                //         vm.formSuccess = true;
-                                //     }
-                                // });
+                //             if(errors.length > 0) {
+                //                 console.log("Error");
+                //                 this.formError = true;
+                //             }
+                //             else {
+                //                 form.preventDefault();
+                //                 console.log("No Error", form);
+                //                 var vm = this;
+                //                 form.target.submite();
+                //                 // $.getJSON(
+                //                 // form.target.action + "?callback=?",
+                //                 // $(form.target).serialize(),
+                //                 // function (data) {
+                //                 //     if (data.Status === 400) {
+                //                 //       vm.formError = true;
+                //                 //     } else { // 200
+                //                 //         vm.formSuccess = true;
+                //                 //     }
+                //                 // });
                                 
-                            }
-                        }
-                    })
-                },
+                //             }
+                //         }
+                //     })
+                // },
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
