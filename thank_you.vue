@@ -14,7 +14,7 @@
 </template>
 <style>
     #thank_you_container div{
-        padding: 20px;
+            padding: 20px 0 40px;
     }
 </style>
 <script>
