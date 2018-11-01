@@ -61,4 +61,3 @@
         });
     });
 </script>
-<!--https://thecentre.codecloudapp.com/thank_you-->
