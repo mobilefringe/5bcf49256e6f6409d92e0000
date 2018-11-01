@@ -169,7 +169,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://mallmaverick.ca/promotions/" + slug;
+                    var share_url = "https://www.thecentremall.com/promotions/" + slug;
                     return share_url;
                 },
                 checkimageURL(value){
