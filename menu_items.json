@@ -24,10 +24,7 @@
     {
         "name": "header.promos",
         "href": "/promotions"
-        "sub_menu": [{
-            "name": "header.store_promos",
-            "href": "/promotions"
-        }]
+        
     },
     {
         "name": "header.whats_happening",
