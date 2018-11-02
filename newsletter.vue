@@ -23,7 +23,7 @@
                                 <input v-model="form_data.email" required class="form-control" name="cm-silhht-silhht" type="email" placeholder="Email" id="newsletter_email">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group text-left">
                             <div class="col-xs-12">
     					        <label class="checkbox">
                                     <input name="agree_newsletter" required  type="checkbox">
@@ -31,7 +31,7 @@
                                 </label>
     					    </div>
     					</div>
-    					<div class="form-group">
+    					<div class="form-group text-left">
                             <div class="col-xs-12">
                                 <button class="contest_btn" type="submit" :disabled="formSuccess">{{$t("newsletter_page.subscribe")}}</button>
                             </div>
