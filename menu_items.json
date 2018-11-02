@@ -23,10 +23,10 @@
     },
     {
         "name": "header.promos",
-        "href": "#",
+        "href": "/promotions"
         "sub_menu": [{
             "name": "header.store_promos",
-        "href": "/promotions"
+            "href": "/promotions"
         }]
     },
     {
