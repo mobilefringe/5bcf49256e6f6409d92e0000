@@ -9,7 +9,7 @@
 		</div>  
         <div class="site_container">
             <div class="row"> 
-                <div class="col-md-12 contact_contents">
+                <div class="col-md-12 contact_contents newsletter_container">
                     <form class="form-horizontal" action="https://mobilefringe.createsend.com/t/d/s/silhht/" method="post" @submit.prevent="validateBeforeSubmit">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12 text-left" >
