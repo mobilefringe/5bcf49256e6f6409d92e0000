@@ -75,6 +75,13 @@
                         this.currentPage = response[0].data;
                         
                         console.log(this.$route.path)
+                        var temp_repo = this.findRepoByName('Pages Banner');
+                        if(temp_repo) {
+                            this.pageBanner = temp_repo.images[0];
+                        } else {
+                            this.pageBanner = {};
+                            this.pageBanner.image_url= "";
+                        }
                         
                         if (_.includes(this.$route.path, "/pages/thecentre-code-of-conduct")) {
                             var temp_repo = this.findRepoByName('Contact Us Banner');
