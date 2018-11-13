@@ -23,7 +23,6 @@
             </div>
         </div>
     </div>
-    
 </template>
 <style>
     .lb-data .lb-number, .lb-nav {
