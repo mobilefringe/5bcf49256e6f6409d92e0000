@@ -83,8 +83,8 @@
                             this.pageBanner.image_url= "";
                         }
                         
-                        if (_.includes(this.$route.path, "/pages/thecentre-code-of-conduct") || _.includes(this.$route.path, "/pages/thecentre-leasing")) {
-                            var temp_repo = this.findRepoByName('Contact Us Banner');
+                        if (_.includes(this.$route.path, "/pages/thecentre-news") || _.includes(this.$route.path, "/pages/thecentre-development") || _.includes(this.$route.path, "/pages/thecentre-movies-for-mommies")) {
+                            var temp_repo = this.findRepoByName('Events Banner');
                             if (temp_repo) {
                                 this.pageBanner = temp_repo.images[0];
                             } else {
@@ -92,8 +92,19 @@
                                 this.pageBanner.image_url= "";
                             }    
                         }
+                        
                         if (_.includes(this.$route.path, "/pages/thecentre-guest-services") || _.includes(this.$route.path, "/pages/thecentre-gift-cards") || _.includes(this.$route.path, "/pages/thecentre-parking-accessibility") || _.includes(this.$route.path, "/pages/thecentre-community-support") || _.includes(this.$route.path, "/pages/thecentre-green-initiatives")) {
                             var temp_repo = this.findRepoByName('Guest Services Banner');
+                            if (temp_repo) {
+                                this.pageBanner = temp_repo.images[0];
+                            } else {
+                                this.pageBanner = {};
+                                this.pageBanner.image_url= "";
+                            }    
+                        }
+                        
+                        if (_.includes(this.$route.path, "/pages/thecentre-code-of-conduct") || _.includes(this.$route.path, "/pages/thecentre-leasing")) {
+                            var temp_repo = this.findRepoByName('Contact Us Banner');
                             if (temp_repo) {
                                 this.pageBanner = temp_repo.images[0];
                             } else {
