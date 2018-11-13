@@ -92,7 +92,7 @@
                                 this.pageBanner.image_url= "";
                             }    
                         }
-                        if (_.includes(this.$route.path, "/pages/thecentre-guest-services") || _.includes(this.$route.path, "/pages/thecentre-gift-cards") || _.includes(this.$route.path, "/pages/thecentre-parking-accessibility") || _.includes(this.$route.path, "/pages/thecentre-community-support")) {
+                        if (_.includes(this.$route.path, "/pages/thecentre-guest-services") || _.includes(this.$route.path, "/pages/thecentre-gift-cards") || _.includes(this.$route.path, "/pages/thecentre-parking-accessibility") || _.includes(this.$route.path, "/pages/thecentre-community-support") || _.includes(this.$route.path, "/pages/thecentre-green-initiatives")) {
                             var temp_repo = this.findRepoByName('Guest Services Banner');
                             if (temp_repo) {
                                 this.pageBanner = temp_repo.images[0];
