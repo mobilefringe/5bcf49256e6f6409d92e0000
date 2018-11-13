@@ -92,8 +92,7 @@
                     var temp_repo = this.findRepoByName('Promotions Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {};
                         this.pageBanner.image_url = "";
                     }
