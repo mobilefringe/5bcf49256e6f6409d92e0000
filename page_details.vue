@@ -92,7 +92,15 @@
                                 this.pageBanner.image_url= "";
                             }    
                         }
-                        
+                        if (_.includes(this.$route.path, "/pages/thecentre-guest-services") || _.includes(this.$route.path, "/pages/thecentre-gift-cards") || _.includes(this.$route.path, "/pages/thecentre-parking-accessibility") || _.includes(this.$route.path, "/pages/thecentre-community-support")) {
+                            var temp_repo = this.findRepoByName('Guest Services Banner');
+                            if (temp_repo) {
+                                this.pageBanner = temp_repo.images[0];
+                            } else {
+                                this.pageBanner = {};
+                                this.pageBanner.image_url= "";
+                            }    
+                        }
                         // var temp_repo = this.findRepoByName('Pages Banner');
                         // if(temp_repo) {
                         //     this.pageBanner = temp_repo.images[0];
