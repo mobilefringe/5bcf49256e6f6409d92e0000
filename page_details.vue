@@ -76,7 +76,7 @@
                         
                         console.log(this.$route.path)
                         
-                        if (_.includes(this.$route.path, "contact_us") && _.includes(this.$route.path, "/pages/thecentre-code-of-conduct")) {
+                        if (_.includes(this.$route.path, "/pages/thecentre-code-of-conduct")) {
                             var temp_repo = this.findRepoByName('Contact Us Banner');
                             if (temp_repo) {
                                 this.pageBanner = temp_repo.images[0];
