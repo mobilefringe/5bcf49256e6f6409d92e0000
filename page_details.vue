@@ -72,6 +72,7 @@
                         if(response == null || response == undefined) {
                             this.$router.replace('/');
                         }
+                        console.log(this.$route.path)
                         this.currentPage = response[0].data;
                         var temp_repo = this.findRepoByName('Pages Banner');
                         if(temp_repo) {
