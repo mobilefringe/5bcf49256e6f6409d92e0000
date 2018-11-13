@@ -72,6 +72,8 @@
                         if(response == null || response == undefined) {
                             this.$router.replace('/');
                         }
+                        this.currentPage = response[0].data;
+                        
                         console.log(this.$route.path)
                         
                         if (_.includes(this.$route.path, "contact_us") && _.includes(this.$route.path, "/pages/thecentre-code-of-conduct")) {
@@ -80,15 +82,15 @@
                                 this.pageBanner = temp_repo.images[0];
                             }    
                         }
-                        this.currentPage = response[0].data;
-                        var temp_repo = this.findRepoByName('Pages Banner');
-                        if(temp_repo) {
-                            this.pageBanner = temp_repo.images[0];
-                        }
-                        else {
-                            this.pageBanner = {};
-                            this.pageBanner.image_url= "";
-                        }
+                        
+                        // var temp_repo = this.findRepoByName('Pages Banner');
+                        // if(temp_repo) {
+                        //     this.pageBanner = temp_repo.images[0];
+                        // }
+                        // else {
+                        //     this.pageBanner = {};
+                        //     this.pageBanner.image_url= "";
+                        // }
                     });
                 }
             }
