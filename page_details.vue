@@ -73,6 +73,13 @@
                             this.$router.replace('/');
                         }
                         console.log(this.$route.path)
+                        
+                        if (_.includes(this.$route.path, "contact_us") || _.includes(this.$route.path, "code-of-conduct")) {
+                            var temp_repo = this.findRepoByName('Contact Us Banner');
+                            if (temp_repo) {
+                                this.pageBanner = temp_repo.images[0];
+                            }    
+                        }
                         this.currentPage = response[0].data;
                         var temp_repo = this.findRepoByName('Pages Banner');
                         if(temp_repo) {
