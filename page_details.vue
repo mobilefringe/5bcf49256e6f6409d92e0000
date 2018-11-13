@@ -83,7 +83,7 @@
                             this.pageBanner.image_url= "";
                         }
                         
-                        if (_.includes(this.$route.path, "/pages/thecentre-code-of-conduct")) {
+                        if (_.includes(this.$route.path, "/pages/thecentre-code-of-conduct") || _.includes(this.$route.path, "/pages/thecentre-leasing")) {
                             var temp_repo = this.findRepoByName('Contact Us Banner');
                             if (temp_repo) {
                                 this.pageBanner = temp_repo.images[0];
