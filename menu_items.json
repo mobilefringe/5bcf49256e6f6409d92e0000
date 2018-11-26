@@ -10,10 +10,6 @@
                 "name": "header.centre_map",
                 "href": "/map"
             },
-            {
-                "name": "header.now_opening",
-                "href": "/whats_new"
-            },
             
             {
                 "name": "header.jobs",
