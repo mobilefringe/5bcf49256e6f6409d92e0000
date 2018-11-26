@@ -190,7 +190,7 @@
                             temp_promo.push(value);
                         }
                     });
-                    temp_promo = _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
+                    temp_promo = _.sortBy(temp_promo, ['start_date', 'end_date']);//_.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
                 },
             },
