@@ -5,7 +5,7 @@
                 <router-link v-if="feature.url" :to="feature.url">
                 	<div :class="{ 'gallery-image' : feature.no_hover_class}"> 
                 	    <img :src="feature.image_url" :alt="feature.name">
-        				<div class="figcaption hvr-underline-from-center">
+        				<div class="figcaption">
         					<h3 v-if="locale=='en-ca'"> {{feature.name}} </h3>
         					<h3 v-else> {{feature.name_2}} </h3>
         					<!--<div class=""></div>-->
