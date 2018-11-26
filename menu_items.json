@@ -34,10 +34,6 @@
                 "href": "/pages/thecentre-news"
             },
             {
-                "name": "header.development",
-                "href": "/pages/thecentre-development"
-            },
-            {
                 "name": "header.programs",
                 "href": "/pages/thecentre-movies-for-mommies"
             }
