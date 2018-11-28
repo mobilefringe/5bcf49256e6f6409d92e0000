@@ -23,7 +23,7 @@
                                 <input v-model="form_data.email" required class="form-control" name="cm-silhht-silhht" type="email" placeholder="Email" id="newsletter_email">
                             </div>
                         </div>
-                        <div class="form-group text-left">
+                        <div class="form-group text-left checkbox_container">
                             <div class="col-xs-12">
     					        <label class="checkbox">
                                     <input name="agree_newsletter" required  type="checkbox">
