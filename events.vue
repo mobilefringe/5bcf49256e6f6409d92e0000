@@ -200,16 +200,33 @@
                 },
                 checkImageURL(value){
                     if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.image_url = Site.default_logo_url;
-                            }
-                            else if (value.store == null || value.store == undefined) {
-                                value.store = {};
-                                value.store.image_url = Site.default_logo_url;
-                            }
-                            if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "http://via.placeholder.com/400x400/757575";
-                            }
+                        return Site.default_logo_url;
+                    }
+                    else if (value.store == null || value.store == undefined) {
+                        value.store = {};
+                        value.store.image_url = Site.default_logo_url;
+                    }
+                    if (_.includes(value.image_url, 'missing')) {
+                        value.image_url = "http://via.placeholder.com/400x400/757575";
+                    }
                 }
+                checkImageURL(value) {
+    if (_.includes(value.image_url, 'missing')) {
+      if (value.store === null || value.store === undefined) {
+        return 'https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404'
+      } else if (
+        value.store != null &&
+        value.store != undefined &&
+        _.includes(value.store.store_front_url_abs, 'missing')
+      ) {
+        return 'https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404'
+      } else {
+        return value.store.store_front_url_abs
+      }
+    } else {
+      return value.promo_image_url_abs
+    }
+  },
             }
         });
     });
