@@ -198,7 +198,7 @@
                     var share_url = "https://www.thecentremall.com/events/" + slug;
                     return share_url;
                 },
-                checkImageURL(){
+                checkImageURL(value){
                     if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
                                 value.store.image_url = Site.default_logo_url;
                             }
