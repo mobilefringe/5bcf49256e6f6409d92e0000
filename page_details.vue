@@ -26,6 +26,9 @@
         height: 35px;
         line-height: 35px;
     }
+    .page_body{
+        text-decoration: underline;
+    }
     #pages_container img{
         width: 100%;
         height: auto;
