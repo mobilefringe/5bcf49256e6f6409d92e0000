@@ -175,16 +175,7 @@
                             value.description_short_2 = _.truncate(value.description_2, {
                                 'length': 150
                             });
-                            if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.image_url = Site.default_logo_url;
-                            }
-                            else if (value.store == null || value.store == undefined) {
-                                value.store = {};
-                                value.store.image_url = Site.default_logo_url;
-                            }
-                            if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "http://via.placeholder.com/400x400/757575";
-                            }
+                            
                             // value.image_url = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1516652189884/ES_logo_red2.png";
                             
                             temp_promo.push(value);
