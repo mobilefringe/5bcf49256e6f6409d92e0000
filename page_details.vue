@@ -26,7 +26,7 @@
         height: 35px;
         line-height: 35px;
     }
-    .page_body{
+    .page_body a{
         text-decoration: underline;
     }
     #pages_container img{
