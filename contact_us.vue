@@ -20,7 +20,7 @@
                         <div class="form-group ">
                             <div class="col-sm-12" :class="{'has-error': errors.has('name')}">
                                 <label class="label" for="name" style="display:none;">Name</label>
-                                <input v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Your Name" data-vv-delay="500">
+                                <input id="name" v-model="form_data.name" v-validate="'required|alpha_spaces'" class="form-control" :class="{'input': true}" name="name" type="text" placeholder="Your Name" data-vv-delay="500">
                                 <span v-show="errors.has('name')" class="form-control-feedback">{{ errors.first('name') }}</span>
                             </div>
                             <div class="col-sm-12" :class="{'has-error': errors.has('email')}">
