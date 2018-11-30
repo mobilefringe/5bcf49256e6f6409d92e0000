@@ -86,7 +86,7 @@
                             this.pageBanner.image_url= "";
                         }
                         
-                        if (_.includes(this.$route.path, "/pages/thecentre-news") || _.includes(this.$route.path, "/pages/thecentre-development") || _.includes(this.$route.path, "/pages/thecentre-movies-for-mommies")) {
+                        if (_.includes(this.$route.path, "/pages/thecentre-news") || _.includes(this.$route.path, "/pages/thecentre-development") || _.includes(this.$route.path, "/pages/thecentre-programs")) {
                             var temp_repo = this.findRepoByName('Events Banner');
                             if (temp_repo) {
                                 this.pageBanner = temp_repo.images[0];
