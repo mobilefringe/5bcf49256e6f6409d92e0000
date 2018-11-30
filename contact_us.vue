@@ -25,7 +25,7 @@
                             </div>
                             <div class="col-sm-12" :class="{'has-error': errors.has('email')}">
                                 <label class="label" for="email" style="display:none;">Email</label>
-                                <input v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="email@email.com" data-vv-delay="500">
+                                <input id="email" v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" placeholder="email@email.com" data-vv-delay="500">
                                 <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                             </div>
                             <div class="col-xs-12" :class="{'has-error': errors.has('message')}">
