@@ -2,7 +2,7 @@
     <div>
         <a href="https://www.facebook.com/TheCentreSK" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i><p style="display:none">Facebook</p></a>
         <a href="https://www.instagram.com/thecentresk" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><p style="display:none">Twitter</p></a>
-        <a href="https://www.twitter.com/TheCentreSK" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com/TheCentreSK" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><p style="display:none">Instagram</p></a>
          
     </div>
     
