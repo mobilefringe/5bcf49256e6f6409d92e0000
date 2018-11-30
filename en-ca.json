@@ -60,7 +60,7 @@
   },
   "promos_page": {
     "promotions" : "Offers",
-    "read_more" : "Read More",
+    "read_more" : "View Promotion Details",
     "no_promo_message" : "There are no Promotions at this time. Please check back soon.",
     "back_to_promos" : "Back to Promotions"
   },
