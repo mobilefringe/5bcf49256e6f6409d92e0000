@@ -11,8 +11,8 @@
 			<div class="row">
 				<div class="col-sm-12 promo_image_container text-left">
 					<router-link to="/events"><i class="fa fa-angle-left"></i> &nbsp; {{$t("events_page.back_to_events")}}</router-link>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentEvent.name}}</h3>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentEvent.name_2}}</h3>
+					<h2 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentEvent.name}}</h2>
+					<h2 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentEvent.name_2}}</h2>
 					<div class="row">
 						<p class="promo_div_date pull-left">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
 						<social-sharing :url="shareURL(currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentEvent.image_url" inline-template >
