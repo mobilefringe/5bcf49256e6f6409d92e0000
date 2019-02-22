@@ -31,7 +31,7 @@
 								<router-link :to="'/jobs/'+ promo.slug" class="event_learn_more pull-left">
 									{{$t("jobs_page.read_more")}} <i class="fa fa-angle-right" aria-hidden="true"></i>
 								</router-link>
-								<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="_.truncate(promo.description, {'length': 99})" twitter-user="EastgateSquare" :media="promo.image_url" inline-template >
+								<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="_.truncate(promo.description, {'length': 99})" :twitter-user="$root.twitter_user" :media="promo.image_url" inline-template >
 									<div class="blog-social-share pull_right">
 										<div class="social_share">
 											<network network="facebook">
