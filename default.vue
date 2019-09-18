@@ -1,5 +1,5 @@
 <template>
-  <router-view class="content" :locale="locale"></router-view>
+    <router-view class="content" :locale="locale"></router-view>
 </template>
 
 <script>
