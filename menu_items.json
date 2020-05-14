@@ -22,6 +22,11 @@
         
     },
     {
+        "name": "header.promos",
+        "href": "/promotions"
+        
+    },
+    {
         "name": "header.whats_happening",
         "href": "#",
         "sub_menu": [
