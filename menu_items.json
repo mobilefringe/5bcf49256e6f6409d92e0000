@@ -22,11 +22,6 @@
         
     },
     {
-        "name": "header.promos",
-        "href": "/pages/thecentre-re-opening"
-        
-    },
-    {
         "name": "header.whats_happening",
         "href": "#",
         "sub_menu": [
@@ -48,7 +43,12 @@
     {
         "name": "header.centre_info",
         "href": "#",
-        "sub_menu": [{
+        "sub_menu": [
+            {
+                "name": "Re-Opening Info",
+                "href": "/pages/thecentre-re-opening"
+            },
+            {
                 "name": "header.guest_services ",
                 "href": "/pages/thecentre-guest-services"
             },
