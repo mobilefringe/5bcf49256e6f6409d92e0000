@@ -45,10 +45,6 @@
         "href": "#",
         "sub_menu": [
             {
-                "name": "Re-Opening Info",
-                "href": "/pages/thecentre-re-opening"
-            },
-            {
                 "name": "header.guest_services ",
                 "href": "/pages/thecentre-guest-services"
             },
@@ -73,6 +69,10 @@
                 "href": "/pages/thecentre-green-initiatives"
             }
         ]
+    },
+    {
+        "name": "Re-Opening Info",
+        "href": "/pages/thecentre-re-opening"
     },
     {
         "name": "header.contact_us",
